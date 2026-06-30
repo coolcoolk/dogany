@@ -1,0 +1,39 @@
+# secrets / env
+.env
+**/.env
+rules/USER.md
+
+# personal agent instances (.template only ships)
+agents/main/
+
+# runtime data (was .telegram_bot -> runtime)
+**/runtime/
+**/logs/
+**/sessions.json
+**/health*.json
+**/images/
+
+# memory (per-agent, personal)
+**/memories/
+**/memory/state.db
+
+# lifekit data (global but personal)
+database/*.db
+database/*.db-wal
+database/*.db-shm
+database/body_stats.json
+database/food_cache.json
+database/lifekit.sql
+# NOTE: schema.sql is CODE (ships); lifekit.sql is a personal data dump (excluded).
+
+# python / OS / backup
+__pycache__/
+*.pyc
+venv/
+.DS_Store
+*.bak
+files/tmp/
+_archive/
+
+# deprecated scaffold (DGN-068, not for distribution)
+scripts/_deprecated-dgn036/
